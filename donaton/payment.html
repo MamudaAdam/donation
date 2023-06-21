@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Method Selection</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Select Payment Method</h1>
+  </header>
+  
+  <section id="payment-methods">
+    <div class="payment-method">
+      <img src="/img/bitcoin.jpg" alt="Bitcoin">
+      <h2>Bitcoin</h2>
+      <p>Donate using Bitcoin cryptocurrency.</p>
+      <button onclick="processPayment('Bitcoin')">Select Bitcoin</button>
+    </div>
+    
+    <div class="payment-method">
+      <img src="/img/paypal.png" alt="PayPal">
+      <h2>PayPal</h2>
+      <p>Donate securely with PayPal.</p>
+      <button onclick="processPayment('PayPal')">Select PayPal</button>
+    </div>
+    
+    <div class="payment-method">
+      <img src="/img/card.jpg" alt="Credit Card">
+      <h2>Credit Card</h2>
+      <p>Donate using your credit card.</p>
+      <button onclick="processPayment('Credit Card')">Select Credit Card</button>
+    </div>
+    
+    <div class="payment-method">
+      <img src="/img/bank.jpg" alt="Bank Transfer">
+      <h2>Bank Transfer</h2>
+      <p>Donate through bank transfer.</p>
+      <button onclick="processPayment('Bank Transfer')">Select Bank Transfer</button>
+    </div>
+  </section>
+  <section id="credit-card-form" style="display: none;">
+    <h2>Credit Card Details</h2>
+    <form>
+      <!-- Credit card input fields go here -->
+      <button type="submit">Make Payment</button>
+    </form>
+  </section>
+  <footer>
+    <p>Thank you for your donation!</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

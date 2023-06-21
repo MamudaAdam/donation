@@ -1,0 +1,119 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2255c2;
+  color: #fff;
+  padding: 7px;
+  text-align: center;
+}
+
+#donation-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #2255c2;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #2255c2;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Specific styles for different devices */
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  header {
+    font-size: 24px;
+  }
+
+  #donation-form {
+    padding: 10px;
+  }
+
+  #custom-amount-form {
+    margin-top: 10px;
+  }
+}
+
+/* Tablets and larger devices */
+@media (min-width: 768px) {
+  header {
+    font-size: 36px;
+  }
+
+  #donation-form {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+  }
+}
+
+/* Large screens and desktops */
+@media (min-width: 1200px) {
+  header {
+    font-size: 48px;
+  }
+
+  #donation-form {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+  }
+}
+#amount-buttons {
+  display: flex;
+  justify-content: flex;
+  margin-bottom: 20px;
+  gap: 40px;
+}
+
+.amount-button {
+  background-color: #2255c2;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.amount-button:hover {
+  background-color: #1c47a9;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  #amount-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .amount-button {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+}
